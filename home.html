@@ -18,28 +18,29 @@
 				z-index: 0;
 				position: fixed;
 			}
-			.b {
-				width: 50%;
+			.navicon {
+				width: 10%;
 				height: 20px;
 				background-color: rgb(255, 255, 255);
-				z-index: 1;
+				z-index: 2;
 				position: fixed;
 			}
-			.c {
+			.navbar {
 				right: 0px;
-				width: 50%;
+				width: 100%;
 				height: 20px;
 				display: flex;
-				justify-content: end;
+				justify-content: center;
+				/* align-items: center; */
 				background-color: rgb(255, 255, 255);
 				z-index: 1;
 				position: fixed;
 			}
 			.about {
-				width: 400px;
-				height: 200px;
+				width: 600px;
+				height: 300px;
 				background-color: white;
-				border-radius: 10%;
+				border-radius: 5%;
 				color: black;
 				position: fixed;
 				top: 50%;
@@ -49,13 +50,34 @@
 				justify-content: center;
 				align-items: center;
 				z-index: 1;
+				flex-direction: column;
+			}
+			.about .abttn {
+				border-radius: 2px;
+				padding: 5px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="a"></div>
-		<div class="b">icon</div>
-		<div class="c">about contact projects</div>
-		<div class="about"><h1>Hello World</h1></div>
+		<div class="navicon">icon</div>
+		<div class="navbar">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Contact</a>
+			<a href="">Github</a>
+			<a href="">Resume</a>
+		</div>
+		<!-- <div class="d"></div> -->
+		<div class="about">
+			<h1 style="background-color: white">
+				Hello World. I'm Jedd, an engineer.
+			</h1>
+			<img src="images/jedi_(69).png" />
+			<p>Based in San Diego, California.</p>
+			<!-- <div class="abttn" style="background-color: rgba(100, 97, 81, 0.986)">
+				V I E W -->
+			</div>
+		</div>
 	</body>
 </html>
