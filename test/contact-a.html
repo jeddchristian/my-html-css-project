@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #0b1f17;
+				color: white;
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				height: 100vh;
+				padding-top: 50px;
+			}
+
+			.container {
+				width: 100%;
+				max-width: 500px;
+				padding: 0 20px;
+			}
+
+			h2 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 15px;
+				background-color: #0f2a20;
+				border: 1px solid #2c6e57;
+				color: white;
+				border-radius: 5px;
+			}
+
+			input::placeholder,
+			textarea::placeholder {
+				color: #77a89a;
+			}
+
+			button {
+				background-color: #00df76;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				color: #00381f;
+				font-weight: bold;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #00c468;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Contact</h2>
+			<p>
+				I'm always open to discussing new projects, creative ideas, or
+				opportunities. Feel free to reach out, and I'll get back to you as soon
+				as possible.
+			</p>
+			<form>
+				<input type="text" placeholder="Your Name" required />
+				<input type="email" placeholder="Your Email" required />
+				<textarea rows="6" placeholder="Your Message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+	</body>
+</html>
